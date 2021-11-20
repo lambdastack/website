@@ -6,8 +6,8 @@ menu:
     weight: 30
 ---
 
+The Blog section contains a number of categories:
 
-This is the **blog** section. It has two categories: News and Releases.
-
-Files in these directories will be listed in reverse chronological order.
-
+* Blogs - Articles and links to Podcasts/Videos
+* News - News that is happening with LambdaStack including Announcements
+* Releases - Information about each release
