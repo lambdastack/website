@@ -7,13 +7,7 @@ description: >
   There are different examples available for both Applications and Clusters
 ---
 
-{{% pageinfo %}}
-The examples are located at https://www.lambdastackio.com/examples
-{{% /pageinfo %}}
-
-# Examples
-
-The full documentation for the examples is located at [Examples](https://www.lambdastackio.com/docs/examples). The basic information for Applications and Clusters is listed in this readme.
+<!-- The full documentation for the examples is located at [Examples](https://www.lambdastackio.com/docs/examples). -->
 
 ## Applications
 

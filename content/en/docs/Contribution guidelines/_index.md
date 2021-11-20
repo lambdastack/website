@@ -6,10 +6,6 @@ description: >
   How to contribute to LambdaStack (code or docs)
 ---
 
-{{% pageinfo %}}
-
-{{% /pageinfo %}}
-
 # LambdaStack Governance Model
 
 <!-- TOC -->
