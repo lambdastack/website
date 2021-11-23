@@ -3,7 +3,7 @@ title: "Contribution and Governance Guidelines"
 linkTitle: "Contribution and Governance Guidelines"
 weight: 10
 description: >
-  How to contribute to LambdaStack (code or docs)
+  How to contribute to LambdaStack (code and/or docs)
 ---
 
 # LambdaStack Governance Model
@@ -23,6 +23,9 @@ description: >
 <!-- /TOC -->
 
 ## Overview
+
+LambdaStack Code Project: https://github.com/lambdastack/lambdastack
+LambdaStack Documentation and website Project: https://github.com/lambdastack/website
 
 This project is led by a project leader and managed by the community. That is, the community actively contributes to the day-to-day maintenance of the project, but the general strategic line is drawn by the project leader. In case of disagreement, they have the last word. It is the project leader’s job to resolve disputes within the community and to ensure that the project is able to progress in a coordinated way. In turn, it is the community’s job to guide the decisions of the project leader through active engagement and contribution.
 

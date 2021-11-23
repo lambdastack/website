@@ -1,0 +1,68 @@
+---
+title: "Kubernetes-ControlPlane"
+weight: 18
+main_menu: true
+content_type: concept
+description: >
+  Kubernetes ControlPlane (aka kubernetes-master) options
+---
+
+{{% pageinfo %}}
+The content of the `kubernetes-master.yml` file is listed for reference only
+{{% /pageinfo %}}
+
+```yaml
+---
+kind: configuration/kubernetes-master
+title: Kubernetes Master Config
+name: default
+specification:
+  version: 1.20.12
+  cni_version: 0.8.7
+  cluster_name: "kubernetes-lambdastack"
+  allow_pods_on_master: False
+  storage:
+    name: lambdastack-cluster-volume # name of the Kubernetes resource
+    path: / # directory path in mounted storage
+    enable: True
+    capacity: 50 # GB
+    data: {} #AUTOMATED - data specific to cloud provider
+  advanced: # modify only if you are sure what value means
+    api_server_args: # https://kubernetes.io/docs/reference/command-line-tools-reference/kube-apiserver/
+      profiling: false
+      enable-admission-plugins: "AlwaysPullImages,DenyEscalatingExec,NamespaceLifecycle,ServiceAccount,NodeRestriction"
+      audit-log-path: "/var/log/apiserver/audit.log"
+      audit-log-maxbackup: 10
+      audit-log-maxsize: 200
+      secure-port: 6443
+    controller_manager_args: # https://kubernetes.io/docs/reference/command-line-tools-reference/kube-controller-manager/
+      profiling: false
+      terminated-pod-gc-threshold: 200
+    scheduler_args:  # https://kubernetes.io/docs/reference/command-line-tools-reference/kube-scheduler/
+      profiling: false
+    networking:
+      dnsDomain: cluster.local
+      serviceSubnet: 10.96.0.0/12
+      plugin: flannel # valid options: calico, flannel, canal (due to lack of support for calico on Azure - use canal)
+    imageRepository: k8s.gcr.io
+    certificates:
+      expiration_days: 365 # values greater than 24855 are not recommended
+      renew: false
+    etcd_args:
+      encrypted: true
+    kubeconfig:
+      local:
+        api_server:
+          # change if you want a custom hostname (you can use jinja2/ansible expressions here, for example "{{ groups.kubernetes_master[0] }}")
+          hostname: 127.0.0.1
+          # change if you want a custom port
+          port: 6443
+#  image_registry_secrets:
+#  - email: emaul@domain.com
+#    name: secretname
+#    namespace: default
+#    password: docker-registry-pwd
+#    server_url: docker-registry-url
+#    username: docker-registry-user
+
+```

@@ -1,6 +1,5 @@
 ---
 title: "Kubernetes"
-linkTitle: "Kubernetes"
 weight: 25
 main_menu: true
 content_type: kubernetes

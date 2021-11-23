@@ -104,8 +104,8 @@ weight = 1
     lineNos = false
     lineNumbersInTable = true
     noClasses = true
-    style = "emacs"
-    # style = "tango"
+    # style = "emacs"
+    style = "tango"
     tabWidth = 4
   [markup.tableOfContents]
     endLevel = 3
@@ -152,12 +152,12 @@ fullversion = "v1.3.4"
 url_latest_version = "https://www.lambdastackio.com"
 
 # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
-github_repo = "https://github.com/lambdastack/lambdastack"
+github_repo = "https://github.com/lambdastack/website"
 # An optional link to a related project repo. For example, the sibling repository where your product code lives.
-github_project_repo = "https://github.com/lambdastack/lambdastack"
+github_project_repo = "https://github.com/lambdastack/website"
 
 # Specify a value here if your content directory is not in your repo's root directory
-github_subdir = "website"
+# github_subdir = "website"
 
 # Uncomment this if you have a newer GitHub repo with "main" as the default branch,
 # or specify a new value if you want to reference another branch in your GitHub links
@@ -209,11 +209,11 @@ breadcrumb_disable = false
 # Set to true to disable the About link in the site footer
 footer_about_disable = false
 # Set to false if you don't want to display a logo (/assets/icons/logo.svg) in the top navbar
-navbar_logo = false
+navbar_logo = true
 # Set to true if you don't want the top navbar to be translucent when over a `block/cover`, like on the homepage.
 navbar_translucent_over_cover_disable = false
 # Enable to show the side bar menu in its compact state.
-sidebar_menu_compact = false
+sidebar_menu_compact = true
 # Set to true to hide the sidebar search box (the top nav search box will still be displayed if search is enabled)
 sidebar_search_disable = false
 
@@ -224,8 +224,8 @@ sidebar_search_disable = false
 [params.ui.feedback]
 enable = true
 # The responses that the user sees after clicking "yes" (the page was helpful) or "no" (the page was not helpful).
-yes = 'Glad to hear it! Please <a href="https://github.com/lambdastack/lambdastack/issues/new">tell us how we can improve</a>.'
-no = 'Sorry to hear that. Please <a href="https://github.com/lambdastack/lambdastack/issues/new">tell us how we can improve</a>.'
+yes = 'Glad to hear it! Please <a href="https://github.com/lambdastack/website/issues/new">tell us how we can improve</a>.'
+no = 'Sorry to hear that. Please <a href="https://github.com/lambdastack/website/issues/new">tell us how we can improve</a>.'
 
 # Adds a reading time to the top of each doc.
 # If you want this feature, but occasionally need to remove the Reading time from a single page, 

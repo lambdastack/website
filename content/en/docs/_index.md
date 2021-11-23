@@ -1,21 +1,10 @@
 ---
 title: "Documentation"
 linkTitle: "Documentation"
-weight: 10
+# weight: 10
 menu:
   main:
     weight: 20
-cards:
-- name: concepts
-  title: "Understand Kubernetes"
-  description: "Learn about Kubernetes and its fundamental concepts."
-  button: "View Concepts"
-  button_path: "/docs/concepts"
-- name: tutorials
-  title: "Try Kubernetes"
-  description: "Follow tutorials to learn how to deploy applications in Kubernetes."
-  button: "View Tutorials"
-  button_path: "/docs/tutorials"
 ---
 
 {{% pageinfo %}}

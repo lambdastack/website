@@ -33,7 +33,7 @@ Most, if not all, competitors only setup basic automation of Kubernetes. Meaning
 
 ## Why was LambdaStack created?
 
-Enterprises and Industry are moving toward Digital Transformations but they journey is not simple or fast. There may be many product lines of legacy applications that need to be modernized and/or re-architected to take advantage of the benifits for true Microservices. Also, some industry domains are so specialized that the core group of software engineers are more domain specialist than generalist. 
+Enterprises and Industry are moving toward Digital Transformations but they journey is not simple or fast. There may be many product lines of legacy applications that need to be modernized and/or re-architected to take advantage of the benifits for true Microservices. Also, some industry domains are so specialized that the core group of software engineers are more domain specialist than generalist.
 
 LambdaStack was architected to remove the burden of:
 * Learning how to setup and manage Kubernetes
@@ -52,4 +52,4 @@ Basically, allow the development teams focus on adding business value and increa
 ## Next steps
 
 * [Getting Started](/docs/getting-started/): Get started with LambdaStack
-* [Examples](/docs/examples/): Check out some examples of building clusters and building applications to be used on the clusters
+* [Examples](/docs/tutorials/examples/): Check out some examples of building clusters and building applications to be used on the clusters

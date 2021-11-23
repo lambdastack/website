@@ -1,0 +1,190 @@
+---
+title: "Image-Registry"
+weight: 13
+main_menu: true
+content_type: concept
+description: >
+  Image Registry options
+---
+
+{{% pageinfo %}}
+The content of the `image-registry.yml` file is listed for reference only
+{{% /pageinfo %}}
+
+```yaml
+---
+kind: configuration/image-registry
+title: "LambdaStack image registry"
+name: default
+specification:
+  description: "Local registry with Docker images"
+  registry_image:
+    name: "registry:2"
+    file_name: registry-2.tar
+  images_to_load:
+    x86_64:
+      generic:
+        - name: "lambdastack/keycloak:14.0.0"
+          file_name: keycloak-14.0.0.tar
+        - name: "rabbitmq:3.8.9"
+          file_name: rabbitmq-3.8.9.tar
+        - name: "lambdastack/ignite:2.9.1"
+          file_name: ignite-2.9.1.tar
+        - name: "kubernetesui/dashboard:v2.3.1"
+          file_name: dashboard-v2.3.1.tar
+        - name: "kubernetesui/metrics-scraper:v1.0.7"
+          file_name: metrics-scraper-v1.0.7.tar
+        - name: "vault:1.7.0"
+          file_name: vault-1.7.0.tar
+        - name: "hashicorp/vault-k8s:0.10.0"
+          file_name: vault-k8s-0.10.0.tar
+        - name: "istio/proxyv2:1.8.1"
+          file_name: proxyv2-1.8.1.tar
+        - name: "istio/pilot:1.8.1"
+          file_name: pilot-1.8.1.tar
+        - name: "istio/operator:1.8.1"
+          file_name: operator-1.8.1.tar
+        # postgres
+        - name: bitnami/pgpool:4.2.4
+          file_name: pgpool-4.2.4.tar
+        - name: bitnami/pgbouncer:1.16.0
+          file_name: pgbouncer-1.16.0.tar
+      current:
+        - name: "haproxy:2.2.2-alpine"
+          file_name: haproxy-2.2.2-alpine.tar
+        # K8s v1.20.12 - LambdaStack 1.3 (transitional version)
+        # https://github.com/kubernetes/kubernetes/blob/v1.20.12/build/dependencies.yaml
+        - name: "k8s.gcr.io/kube-apiserver:v1.20.12"
+          file_name: kube-apiserver-v1.20.12.tar
+        - name: "k8s.gcr.io/kube-controller-manager:v1.20.12"
+          file_name: kube-controller-manager-v1.20.12.tar
+        - name: "k8s.gcr.io/kube-proxy:v1.20.12"
+          file_name: kube-proxy-v1.20.12.tar
+        - name: "k8s.gcr.io/kube-scheduler:v1.20.12"
+          file_name: kube-scheduler-v1.20.12.tar
+        - name: "k8s.gcr.io/coredns:1.7.0"
+          file_name: coredns-1.7.0.tar
+        - name: "k8s.gcr.io/etcd:3.4.13-0"
+          file_name: etcd-3.4.13-0.tar
+        - name: "k8s.gcr.io/pause:3.2"
+          file_name: pause-3.2.tar
+        # flannel
+        - name: "quay.io/coreos/flannel:v0.14.0-amd64"
+          file_name: flannel-v0.14.0-amd64.tar
+        - name: "quay.io/coreos/flannel:v0.14.0"
+          file_name: flannel-v0.14.0.tar
+        # canal & calico
+        - name: "calico/cni:v3.20.2"
+          file_name: cni-v3.20.2.tar
+        - name: "calico/kube-controllers:v3.20.2"
+          file_name: kube-controllers-v3.20.2.tar
+        - name: "calico/node:v3.20.2"
+          file_name: node-v3.20.2.tar
+        - name: "calico/pod2daemon-flexvol:v3.20.2"
+          file_name: pod2daemon-flexvol-v3.20.2.tar
+      legacy:
+        # K8s v1.18.6 - LambdaStack 0.7.1 - 1.2
+        - name: "k8s.gcr.io/kube-apiserver:v1.18.6"
+          file_name: kube-apiserver-v1.18.6.tar
+        - name: "k8s.gcr.io/kube-controller-manager:v1.18.6"
+          file_name: kube-controller-manager-v1.18.6.tar
+        - name: "k8s.gcr.io/kube-proxy:v1.18.6"
+          file_name: kube-proxy-v1.18.6.tar
+        - name: "k8s.gcr.io/kube-scheduler:v1.18.6"
+          file_name: kube-scheduler-v1.18.6.tar
+        - name: "k8s.gcr.io/coredns:1.6.7"
+          file_name: coredns-1.6.7.tar
+        - name: "k8s.gcr.io/etcd:3.4.3-0"
+          file_name: etcd-3.4.3-0.tar
+        # flannel
+        - name: "quay.io/coreos/flannel:v0.12.0-amd64"
+          file_name: flannel-v0.12.0-amd64.tar
+        - name: "quay.io/coreos/flannel:v0.12.0"
+          file_name: flannel-v0.12.0.tar
+        # canal & calico
+        - name: "calico/cni:v3.15.0"
+          file_name: cni-v3.15.0.tar
+        - name: "calico/kube-controllers:v3.15.0"
+          file_name: kube-controllers-v3.15.0.tar
+        - name: "calico/node:v3.15.0"
+          file_name: node-v3.15.0.tar
+        - name: "calico/pod2daemon-flexvol:v3.15.0"
+          file_name: pod2daemon-flexvol-v3.15.0.tar
+    aarch64:
+      generic:
+        - name: "lambdastack/keycloak:14.0.0"
+          file_name: keycloak-14.0.0.tar
+        - name: "rabbitmq:3.8.9"
+          file_name: rabbitmq-3.8.9.tar
+        - name: "lambdastack/ignite:2.9.1"
+          file_name: ignite-2.9.1.tar
+        - name: "kubernetesui/dashboard:v2.3.1"
+          file_name: dashboard-v2.3.1.tar
+        - name: "kubernetesui/metrics-scraper:v1.0.7"
+          file_name: metrics-scraper-v1.0.7.tar
+        - name: "vault:1.7.0"
+          file_name: vault-1.7.0.tar
+        - name: "hashicorp/vault-k8s:0.10.0"
+          file_name: vault-k8s-0.10.0.tar
+      current:
+        - name: "haproxy:2.2.2-alpine"
+          file_name: haproxy-2.2.2-alpine.tar
+        # K8s v1.20.12 - LambdaStack 1.3 (transition version)
+        - name: "k8s.gcr.io/kube-apiserver:v1.20.12"
+          file_name: kube-apiserver-v1.20.12.tar
+        - name: "k8s.gcr.io/kube-controller-manager:v1.20.12"
+          file_name: kube-controller-manager-v1.20.12.tar
+        - name: "k8s.gcr.io/kube-proxy:v1.20.12"
+          file_name: kube-proxy-v1.20.12.tar
+        - name: "k8s.gcr.io/kube-scheduler:v1.20.12"
+          file_name: kube-scheduler-v1.20.12.tar
+        - name: "k8s.gcr.io/coredns:1.7.0"
+          file_name: coredns-1.7.0.tar
+        - name: "k8s.gcr.io/etcd:3.4.13-0"
+          file_name: etcd-3.4.13-0.tar
+        - name: "k8s.gcr.io/pause:3.2"
+          file_name: pause-3.2.tar
+        # flannel
+        - name: "quay.io/coreos/flannel:v0.14.0-arm64"
+          file_name: flannel-v0.14.0-arm64.tar
+        - name: "quay.io/coreos/flannel:v0.14.0"
+          file_name: flannel-v0.14.0.tar
+        # canal & calico
+        - name: "calico/cni:v3.20.2"
+          file_name: cni-v3.20.2.tar
+        - name: "calico/kube-controllers:v3.20.2"
+          file_name: kube-controllers-v3.20.2.tar
+        - name: "calico/node:v3.20.2"
+          file_name: node-v3.20.2.tar
+        - name: "calico/pod2daemon-flexvol:v3.20.2"
+          file_name: pod2daemon-flexvol-v3.20.2.tar
+      legacy:
+        # K8s v1.18.6 - LambdaStack 0.7.1 - 1.2
+        - name: "k8s.gcr.io/kube-apiserver:v1.18.6"
+          file_name: kube-apiserver-v1.18.6.tar
+        - name: "k8s.gcr.io/kube-controller-manager:v1.18.6"
+          file_name: kube-controller-manager-v1.18.6.tar
+        - name: "k8s.gcr.io/kube-proxy:v1.18.6"
+          file_name: kube-proxy-v1.18.6.tar
+        - name: "k8s.gcr.io/kube-scheduler:v1.18.6"
+          file_name: kube-scheduler-v1.18.6.tar
+        - name: "k8s.gcr.io/coredns:1.6.7"
+          file_name: coredns-1.6.7.tar
+        - name: "k8s.gcr.io/etcd:3.4.3-0"
+          file_name: etcd-3.4.3-0.tar
+        # flannel
+        - name: "quay.io/coreos/flannel:v0.12.0-arm64"
+          file_name: flannel-v0.12.0-arm64.tar
+        - name: "quay.io/coreos/flannel:v0.12.0"
+          file_name: flannel-v0.12.0.tar
+        # canal & calico
+        - name: "calico/cni:v3.15.0"
+          file_name: cni-v3.15.0.tar
+        - name: "calico/kube-controllers:v3.15.0"
+          file_name: kube-controllers-v3.15.0.tar
+        - name: "calico/node:v3.15.0"
+          file_name: node-v3.15.0.tar
+        - name: "calico/pod2daemon-flexvol:v3.15.0"
+          file_name: pod2daemon-flexvol-v3.15.0.tar
+
+```
