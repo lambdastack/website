@@ -14,7 +14,7 @@ The content of the `kubernetes-master.yml` file is listed for reference only
 ```yaml
 ---
 kind: configuration/kubernetes-master
-title: Kubernetes Master Config
+title: Kubernetes Control Plane Config
 name: default
 specification:
   version: 1.20.12

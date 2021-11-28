@@ -1,11 +1,10 @@
 ---
-title: "CLI"
+title: "Command Line"
 weight: 7
 date: 2021-11-19
 content_type: design
 description: >
-  Desgin docs for CLI
+  Desgin docs for Command Line (CLI)
 ---
 
->Some of these date back to older versions but efforts are made to keep the most important - sometimes :)
-
+This directory contains design documents related to cli functionality itself.

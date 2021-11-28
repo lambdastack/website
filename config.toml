@@ -18,7 +18,7 @@ enableMissingTranslationPlaceholders = true
 disableBrowserError = true
 
 # Comment out to disable taxonomies in Docsy
-disableKinds = ["taxonomy", "taxonomyTerm"]
+# disableKinds = ["taxonomy", "taxonomyTerm"]
 
 ignoreFiles = [ "(?:^|/)OWNERS$", "README[-]+[a-z]*\\.md", "^node_modules$", "content/en/docs/doc-contributor-tools" ]
 
@@ -55,6 +55,10 @@ date = ["date", ":filename", "publishDate", "lastmod"]
 # Configure how URLs look like per section.
 [permalinks]
 blog = "/:section/:year/:month/:day/:slug/"
+
+[sitemap]
+  filename = "sitemap.xml"
+  priority = 0.75
 
 ## Configuration for BlackFriday markdown parser: https://github.com/russross/blackfriday
 [blackfriday]
@@ -207,7 +211,7 @@ url = "https://lambdastackio.com"
 #  Set to true to disable breadcrumb navigation.
 breadcrumb_disable = false
 # Set to true to disable the About link in the site footer
-footer_about_disable = false
+footer_about_disable = true
 # Set to false if you don't want to display a logo (/assets/icons/logo.svg) in the top navbar
 navbar_logo = true
 # Set to true if you don't want the top navbar to be translucent when over a `block/cover`, like on the homepage.
@@ -262,14 +266,14 @@ enable = true
 # 	icon = "fa fa-envelope"
 #         desc = "Discuss development issues around the project"
 
-# [params.mermaid]
-# enable = true
-# theme = "default"
+[params.mermaid]
+enable = true
+theme = "default"
 
-# [params.plantuml]
-# enable = true
-# theme = "default"
-# svg_image_url = "https://www.plantuml.com/plantuml/svg/"
+[params.plantuml]
+enable = true
+theme = "default"
+svg_image_url = "https://www.plantuml.com/plantuml/svg/"
 
 # [params.katex]
 # enable = true
@@ -279,9 +283,9 @@ enable = true
 # [params.katex.mhchem]
 # enable = true
 
-# [params.print]
-# disable_toc = false
+[params.print]
+disable_toc = false
 
-# [params.markmap]
-# enable = true
+[params.markmap]
+enable = true
 
