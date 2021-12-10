@@ -249,6 +249,19 @@ enable = true
 	url = "https://twitter.com/lambdastack"
 	icon = "fab fa-twitter"
         desc = "Follow us on Twitter to get the latest news!"
+# [[params.links.user]]
+# 	name = "GitHub"
+# 	url = "https://github.com/lambdastack/lambdastack"
+# 	icon = "fab fa-github"
+#         desc = "Development takes place here!"
+# [[params.links.site]]
+# 	name = "Documentation"
+# 	url = "https://www.lambdastackio.com/docs/"
+
+# [[params.links.site]]
+# 	name = "Blog"
+# 	url = "https://www.lambdastackio.com/blog/"
+
 # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
 [[params.links.developer]]
 	name = "GitHub"
