@@ -1,0 +1,181 @@
+baseURL: /
+title: LambdaStack
+enableRobotsTXT: true
+theme:
+  - docsy
+enableGitInfo: true
+contentDir: content/en
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: false
+enableMissingTranslationPlaceholders: true
+disableBrowserError: true
+ignoreFiles:
+  - '(?:^|/)OWNERS$'
+  - 'README[-]+[a-z]*\.md'
+  - ^node_modules$
+  - content/en/docs/doc-contributor-tools
+timeout: 3000
+taxonomies:
+  tag: tags
+  category: categories
+params:
+  taxonomy:
+    taxonomyCloud:
+      - tags
+      - categories
+    taxonomyCloudTitle:
+      - Tag Cloud
+      - Categories
+    taxonomyPageHeader:
+      - tags
+      - categories
+    pygmentsCodeFences: true
+    pygmentsUseClasses: false
+    pygmentsUseClassic: false
+    pygmentsStyle: tango
+  copyright: LambdaStack
+  version_menu: Versions
+  archived_version: false
+  version: v1.3
+  latest: v1.3
+  fullversion: v1.3.4
+  url_latest_version: 'https://www.lambdastackio.com'
+  github_repo: 'https://github.com/lambdastack/website'
+  github_project_repo: 'https://github.com/lambdastack/website'
+  github_branch: main
+  time_format_blog: 'Monday, January 02, 2006'
+  time_format_default: 'January 2, 2006'
+  rss_sections:
+    - blog
+  gcs_engine_id: d5be96860f98d4565
+  algolia_docsearch: false
+  k8s_search: true
+  offlineSearch: false
+  offlineSearchSummaryLength: 70
+  offlineSearchMaxResults: 10
+  prism_syntax_highlighting: true
+  pushAssets:
+    css:
+      - callouts
+      - styles
+    js:
+      - script
+  versions:
+    - fullversion: v1.3.4
+      version: v1.3
+      githubbranch: v1.3.4
+      docsbranch: main
+      url: 'https://lambdastackio.com'
+  ui:
+    breadcrumb_disable: false
+    footer_about_disable: true
+    navbar_logo: true
+    navbar_translucent_over_cover_disable: false
+    sidebar_menu_compact: true
+    sidebar_search_disable: false
+    feedback:
+      enable: true
+      'yes': >-
+        Glad to hear it! Please <a
+        href="https://github.com/lambdastack/website/issues/new">tell us how we
+        can improve</a>.
+      'no': >-
+        Sorry to hear that. Please <a
+        href="https://github.com/lambdastack/website/issues/new">tell us how we
+        can improve</a>.
+    readingtime:
+      enable: true
+  links:
+    user:
+      - name: Mailing list
+        url: /#email
+        icon: fa fa-envelope
+        desc: Sign up for LambdaStack announcements
+      - name: Twitter
+        url: 'https://twitter.com/lambdastack'
+        icon: fab fa-twitter
+        desc: Follow us on Twitter to get the latest news!
+    developer:
+      - name: GitHub
+        url: 'https://github.com/lambdastack/lambdastack'
+        icon: fab fa-github
+        desc: Development takes place here!
+  mermaid:
+    enable: true
+    theme: default
+  plantuml:
+    enable: true
+    theme: default
+    svg_image_url: 'https://www.plantuml.com/plantuml/svg/'
+  print:
+    disable_toc: false
+  markmap:
+    enable: true
+frontmatter:
+  date:
+    - date
+    - ':filename'
+    - publishDate
+    - lastmod
+permalinks:
+  blog: '/:section/:year/:month/:day/:slug/'
+sitemap:
+  filename: sitemap.xml
+  priority: 0.75
+blackfriday:
+  plainIDAnchors: true
+  hrefTargetBlank: true
+  angledQuotes: false
+  latexDashes: true
+imaging:
+  resampleFilter: CatmullRom
+  quality: 75
+  anchor: smart
+services:
+  googleAnalytics:
+    id: UA-84702578-1
+languages:
+  en:
+    title: LambdaStack
+    description: LambdaStack - Industrial Proof Kubernetes Automation
+    languageName: English
+    weight: 1
+markup:
+  goldmark:
+    extensions:
+      definitionList: true
+      table: true
+      typographer: false
+    parser:
+      attribute: true
+      autoHeadingID: true
+      autoHeadingIDType: blackfriday
+    renderer:
+      unsafe: true
+  highlight:
+    codeFences: true
+    guessSyntax: false
+    hl_Lines: ''
+    lineNoStart: 1
+    lineNos: false
+    lineNumbersInTable: true
+    noClasses: true
+    style: tango
+    tabWidth: 4
+  tableOfContents:
+    endLevel: 3
+    ordered: false
+    startLevel: 2
+outputs:
+  home:
+    - HTML
+    - RSS
+  page:
+    - HTML
+  section:
+    - HTML
+    - print
+    - RSS
+outputFormats:
+  RSS:
+    baseName: feed

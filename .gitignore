@@ -8,6 +8,4 @@ privacy.html
 toc.html
 gdpr.html
 aup.html
-frontmatter.json
-.frontmatter
-.vscode
+origconfig.toml
