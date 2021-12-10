@@ -4,6 +4,7 @@ linkTitle: Documentation
 menu:
   main:
     weight: 20
+    pre: <i class='fas fa-book'></i>
 lastmod: '2021-12-03T20:38:05.594Z'
 ---
 
