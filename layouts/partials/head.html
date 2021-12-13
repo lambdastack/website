@@ -8,7 +8,7 @@
 {{ end -}}
 
 {{ if and hugo.IsProduction (ne $outputFormat "print") -}}
-<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+{{ with .Params.robotsdisallow }}<meta name="robots" content="noindex, nofollow, noarchive">{{ else }}<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">{{ end }}
 {{ else -}}
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 {{ end -}}

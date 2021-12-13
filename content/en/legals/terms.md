@@ -5,6 +5,7 @@ description: >
     Terms of Service
 type: legals
 hide_feedback: true
+robotsdisallow: true
 ---
 Terms of Service
 ================

@@ -5,6 +5,7 @@ description: >
     Cookies Policy
 type: legals
 hide_feedback: true
+robotsdisallow: true
 ---
 
 >Our [Privacy Policy](https://lambdastackio.com/legals/privacy/) explains our principles when it comes to the collection, processing, and storage of your information. This policy specifically explains how we, our partners, and users of our services deploy cookies, as well as the options you have to control them.
@@ -56,7 +57,7 @@ In addition, people and companies that use our services to publish or host their
 |ls_mobile|Stores whether a user has chosen to view the mobile version of a website.|
 |botdlang|Used to track the language a user has selected to view popular blogs in.|
 |country_code|Used in order to determine whether or not the cookie banner should be shown. Set immediately on page load and retained for 6 hours to remember the visitor's country.|
-|csrftoken|Python/Ajax security cookie used on accounts.longreads.com.|
+|csrftoken|Python/Ajax security cookie used on accounts.|
 |forterToken|For processing payment and to aid in fraud detection.|
 |landingpage_currency|Defines the currency displayed on landing pages.|
 |ls_dashboard|Records last used folder in LambdaStack dashboard so it can be reopened upon user’s next visit.|
@@ -121,7 +122,7 @@ Some analytics services we use, which place their own cookies or web tags on you
 
 ### Our Internal Analytics Tool
 
-In order to better understand how our services are used, we monitor certain user activities that take place within our products, including page views and clicks on any links used when managing a site via our dashboards. We call each one of these actions an “event.” Analytics events are attached to your WordPress.com account and are handled via a first party system that Automattic owns and maintains. In general, we record the following data for each event: IP address, WordPress.com user ID and username, WordPress.com-connected site ID (for sites not hosted on WordPress.com), user agent, referring URL, timestamp of event, browser language, and country code. We use this information to improve our products, make our marketing to you more relevant, personalize your experience, and for the other purposes described in our [Privacy Policy](http://automattic.com/privacy/). You may opt out of our analytics program through your user settings. By doing so, you won’t share information with our analytics tool about events or actions that happen after the opt-out, while logged in to your WordPress.com account. Note that opting out does not disable the functionality of the actions we track - for example, if you publish a post, we will still have record of that (don’t worry!), but for an event or action after you opt out, we will not have other data associated with that action or event in the analytics tool.
+In order to better understand how our services are used, we monitor certain user activities that take place within our products, including page views and clicks on any links used when managing a site via our dashboards. We call each one of these actions an “event.” Analytics events are attached to your WordPress.com account and are handled via a first party system that Automattic owns and maintains. In general, we record the following data for each event: IP address, WordPress.com user ID and username, WordPress.com-connected site ID (for sites not hosted on WordPress.com), user agent, referring URL, timestamp of event, browser language, and country code. We use this information to improve our products, make our marketing to you more relevant, personalize your experience, and for the other purposes described in our [Privacy Policy](https://www.lambdastackio.com/legals/privacy/). You may opt out of our analytics program through your user settings. By doing so, you won’t share information with our analytics tool about events or actions that happen after the opt-out, while logged in to your WordPress.com account. Note that opting out does not disable the functionality of the actions we track - for example, if you publish a post, we will still have record of that (don’t worry!), but for an event or action after you opt out, we will not have other data associated with that action or event in the analytics tool.
 
 ### Consent for Advertising Cookies on Our Sites
 
