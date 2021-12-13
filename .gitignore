@@ -3,9 +3,4 @@ resources/
 node_modules/
 package-lock.json
 .DS_Store
-privacy.html
-**/content/en/legals/
-toc.html
-gdpr.html
-aup.html
 origconfig.toml

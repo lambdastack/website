@@ -13,7 +13,7 @@
     "url": "git+https://github.com/lambdastack/lambdastack.git"
   },
   "author": "Hans Jones",
-  "license": "Apache-2.0",
+  "license": "https://www.lambdastackio.com/legals/",
   "bugs": {
     "url": "https://github.com/lambdastack/lambdastack/issues"
   },

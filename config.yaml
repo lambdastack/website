@@ -34,6 +34,7 @@ params:
     pygmentsUseClassic: false
     pygmentsStyle: tango
   copyright: LambdaStack
+  privacy_policy: "privacy"
   version_menu: Versions
   archived_version: false
   version: v1.3
@@ -172,6 +173,7 @@ outputs:
     - RSS
   page:
     - HTML
+    - print
   section:
     - HTML
     - print
