@@ -1,0 +1,18 @@
+<!doctype html>
+<html class="h-full no-js">
+  <head>
+    {{ partial "head.html" . }}
+  </head>
+  <body class="td-{{ .Kind }}">
+    <header>
+      {{ partial "navbar.html" . }}
+    </header>
+    <div>
+      <main role="main" class="td-main">
+        {{ block "main" . }}{{ end }}
+      </main>
+      </div>
+      {{ partial "footer.html" . }}
+    {{ partialCached "scripts.html" . }}
+  </body>
+</html>

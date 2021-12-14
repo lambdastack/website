@@ -8,4 +8,5 @@ robotsdisallow: true
 ---
 
 ## DMCA
-WIP
+
+We are in the process of updating our DMCA policy. Stay tuned.

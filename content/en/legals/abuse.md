@@ -8,4 +8,5 @@ robotsdisallow: true
 ---
 
 ## Abuse Reporting
-WIP
+
+We are currently in the process of revamping out `Abuse` reporting policy. Stay tuned.

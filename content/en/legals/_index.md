@@ -1,6 +1,6 @@
 ---
 title: Legal
-type: legal
+type: legals
 robotsdisallow: true
 description: >
   This is the Legal section for Privacy Policy, Cookies, Terms of Use

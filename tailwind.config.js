@@ -1,5 +1,9 @@
 module.exports = {
-  content: [],
+  content: [
+    './content/**/*.{md, html, js}',
+    './layouts/**/*.{html, js}',
+    './**/*.{md, html, js}'
+  ],
   presets: [],
   darkMode: 'media', // or 'class'
   theme: {
@@ -946,5 +950,11 @@ module.exports = {
     'active',
     'disabled',
   ],
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/aspect-ratio'),
+    require('@tailwindcss/typography'),
+    require('@tailwindcss/line-clamp'),
+    require('tailwindcss-children')
+  ],
 }
