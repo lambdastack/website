@@ -134,7 +134,7 @@ imaging:
   anchor: smart
 services:
   googleAnalytics:
-    id: UA-84702578-1
+    id: G-JMKHVVWL98 #UA-84702578-1
 languages:
   en:
     title: LambdaStack

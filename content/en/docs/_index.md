@@ -9,7 +9,7 @@ lastmod: '2021-12-03T20:38:05.594Z'
 ---
 
 {{% pageinfo %}}
-You're encouraged to make pull requests to enhance any __"wholes"__ that you may find in the documentation.
+You're encouraged to make pull requests to enhance any __"holes"__ that you may find in the documentation.
 {{% /pageinfo %}}
 
 Welcome to the LambdaStack documentation center. At this moment, the documentation is on [LAMBDASTACK REPO](https://github.com/lambdastack/lambdastack).
