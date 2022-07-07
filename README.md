@@ -1,5 +1,7 @@
 # LambdaStack Documentation
 
+> PostgresSQL DB is being upgraded to 14.4.
+
 In this project, the Docsy theme is included as a Git submodule:
 
 ```bash
